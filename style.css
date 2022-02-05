@@ -130,6 +130,7 @@ body {
   padding: 10px 0;
   color: #FFFFFF;
   width: 100%;
+  font-size: 56px;
 }
 .member {
   padding-right: 10px;
@@ -137,4 +138,5 @@ body {
   display: inline-block;
   color: #00FF00;
   text-transform: uppercase;
+  font-size: 56px;
 }
