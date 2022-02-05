@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+      <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+      <link rel="stylesheet" href="style.css"/>
+    </head>
+  <body>
+    <div id="w">
+      <div class="loginhead">
+        <p class="log">room</p>
+      </div>
+      <div class="signin">
+        <input id="signin_input" placeholder="NAME" type="text"/>
+        </br><button class="not" onclick="connect()">connect</button>
+      </div>
+    </div>
+    <div id="s">
+      <div class="members-count">-</div>
+      <div class="messages"></div>
+      <form class="message-form" onsubmit="return false;">
+        <input class="message-form__input" placeholder="Type a message.." type="text"/>
+        <button class="message-form__button" type="submit">SEND</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

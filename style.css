@@ -1,0 +1,140 @@
+*{
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+body {
+      margin: 0;
+      padding: 0;
+      background:#000000;
+      overflow: hidden;
+  }
+
+.loginhead {
+    margin-top: 100px;
+  }
+.loginhead p {
+  font-family: 'Zen Tokyo Zoo';
+  font-weight: bolder;
+  text-transform: uppercase;
+    font-size: 200px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 0 0 0 transparent,
+                  0 0 10px #00FF00,
+                  0 0 20px rgba(0, 255, 0, 0.5),
+                  0 0 40px #00FF00,
+                  0 0 100px #00FF00,
+                  0 0 200px #00FF00,
+                  0 0 300px #00FF00,
+                  0 0 500px #00FF00;
+    animation: animate 2s infinite alternate;
+    margin-bottom: 250px;
+  }
+@keyframes animate {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.6;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.3;
+    }
+    46% {
+      opacity: 1;
+    }
+    48%{
+      opacity: 0.4;
+  }}
+.signin input{
+  color: #00FF00;
+  margin-left:100px;
+  width: 55%;
+  background-color: #000000;
+  font-size: 56px;
+  padding: 15px;
+  border: 0px;
+  border-bottom: 2px solid #00FF00;
+  outline: none;
+  text-align: left;
+  float: left;
+  text-transform: uppercase;
+}
+.signin button{
+  color: #00FF00;
+  background-color: #000000;
+  font-size: 45px;
+  outline: none;
+  border: 0;
+  margin: 100px;
+  float: right;
+  text-transform: uppercase;
+}
+.signin p{
+  text-align: left;
+  float: left;
+  margin-left:100px;
+  color: #00FF00;
+  font-size: 58px;
+  text-transform: uppercase;
+}
+
+.members-count{
+  border: 1px solid #00FF00;
+  padding: 40px;
+  margin: 30px;
+  color: #00FF00;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.message-form input{
+  color: #00FF00;
+  width: 70%;
+  background: #000000;
+  font-size: 60px;
+  padding: 10px;
+  padding-left: 15px;
+  border: 0px ;
+  border-bottom: 1px solid #00FF00;
+  outline: none;
+  text-align: left;
+  position: absolute;bottom: 30px;left: 30px;
+}
+.message-form button{
+  color: #00FF00;
+  background-color: #000000;
+  font-size: 48px;
+  padding: 22px;
+  outline: none;
+  border: 0;
+  width: 25%;
+  position: absolute;bottom: 30px;right: 30px;
+}
+
+.messages {
+  display: block;
+  overflow: auto;
+  border: 0px;
+  padding: 30px;
+  height: 1300px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  font-size: 56px;
+}
+.messages::-webkit-scrollbar{
+  width: 0px;
+}
+.message {
+  padding: 10px 0;
+  color: #FFFFFF;
+  width: 100%;
+}
+.member {
+  padding-right: 10px;
+  position: relative;
+  display: inline-block;
+  color: #00FF00;
+  text-transform: uppercase;
+}
