@@ -77,6 +77,7 @@ function connect(connect){
     el.appendChild(createMemberElement(member));
     el.appendChild(document.createTextNode(text));
     el.className = 'message';
+    el.style.fontSize='56px;';
     el.setAttribute('id','mess');
     return el;
   }
