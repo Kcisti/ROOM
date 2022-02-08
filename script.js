@@ -77,8 +77,6 @@ function connect(connect){
     el.appendChild(createMemberElement(member));
     el.appendChild(document.createTextNode(text));
     el.className = 'message';
-    el.style.fontSize='56px;';
-    el.setAttribute('id','mess');
     return el;
   }
 
@@ -106,7 +104,7 @@ function connect(connect){
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
           registration.showNotification('ROOM',
-          {body :`${members.length} users in room`})});
+          {body :`${drone.data.name.value} is in room`})});
         }
       });
   }
