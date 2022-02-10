@@ -90,7 +90,7 @@ function connect(connect){
   }
 
   function createMemberElement(member) {
-    const {name} = member.clientData;
+    var {name} = member.clientData;
     const el = document.createElement('div');
     el.appendChild(document.createTextNode(name));
     el.className = 'member';
@@ -104,7 +104,7 @@ function connect(connect){
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
           registration.showNotification('ROOM',
-          {body : drone.data.name.membrana +` is in room`})});
+          {body : {name} +` is in room`})});
         }
       });
   }
