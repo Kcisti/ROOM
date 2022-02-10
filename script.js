@@ -104,8 +104,10 @@ function connect(connect){
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
           registration.showNotification('ROOM',
-          {body :`${drone.data.name.value} is in room`})});
+          {body : member +` is in room`})});
         }
       });
   }
-  }
+
+
+}
