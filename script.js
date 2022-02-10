@@ -104,7 +104,7 @@ function connect(connect){
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
           registration.showNotification('ROOM',
-          {body : member +` is in room`})});
+          {body : member.clientData +` is in room`})});
         }
       });
   }
