@@ -10,24 +10,30 @@
        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="style.css"/>
     </head>
-  <body>
+  <body id="body">
     <div id="w">
       <div class="loginhead">
-        <p class="log">room</p>
+        <p class="log" id="log">room</p>
       </div>
       <div class="signin">
         <input id="signin_input" placeholder="NAME" type="text"/>
-        </br><button class="not" onclick="connect()">connect</button>
+      </br><button id="signin_button" class="not" onclick="connect()">connect</button>
       </div>
+      <button class="themes">
+        <center><ion-icon name="moon" class="themesI" id="themes_moon" onclick="sunappear()"></ion-icon></center>
+        <center><ion-icon name="sunny" class="themesI" id="themes_sun" onclick="moonappear()"></ion-icon></center>
+      </button>
     </div>
     <div id="s">
-      <div class="members-count">-</div>
-      <div class="messages"></div>
-      <form class="message-form" onsubmit="return false;">
-        <input class="message-form__input" placeholder="Type a message.." type="text"/>
-        <button class="message-form__button" type="submit">SEND</button>
+      <div class="members-count" id="members_count">-</div>
+      <div class="messages" id="messages"></div>
+      <form class="message-form" id="message_form"onsubmit="return false;">
+        <input class="message-form__input" id="message_form_input" placeholder="Type a message.." type="text"/>
+        <button class="message-form__button" id="message_form_button"type="submit">SEND</button>
       </form>
     </div>
   </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="script.js"></script>
 </html>
