@@ -1,8 +1,8 @@
-document.getElementById('s').style.display='none';
+document.getElementById('room').style.display='none';
 function connect(connect){
-  document.getElementById('w').style.display='none';
-  document.getElementById('s').style.display='block';
-  var membrana = document.getElementById('signin_input').value;
+  document.getElementById('log').style.display='none';
+  document.getElementById('room').style.display='block';
+  var membrana = document.getElementById('login_input').value;
   console.log(membrana);
 
   const CLIENT_ID = 'EFslC1FFGukiWwqQ';
@@ -110,28 +110,4 @@ function connect(connect){
   }
 
 
-}
-
-var themes_moon = document.getElementById("themes_moon");
-var themes_sun = document.getElementById("themes_sun");
-themes_sun.style.display='none';
-function sunappear(){
-  themes_moon.style.display='none';
-  themes_sun.style.display='block';
-  document.getElementById("body").style.background='#D2D2D2';
-  document.getElementById("log").style.color='#D2D2D2';
-  document.getElementById("signin_input").style.color='#000000';
-  document.getElementById("signin_button").style.color='#000000';
-  document.getElementById("message_form_input").style.color='#000000';
-  document.getElementById("messages").style.color='#000000';
-}
-function moonappear(){
-  themes_moon.style.display='block';
-  themes_sun.style.display='none';
-  document.getElementById("log").style.color='#0A0A0A';
-  document.getElementById("signin_input").style.color='#FFFFFF';
-  document.getElementById("signin_button").style.color='#FFFFFF';
-  document.getElementById("body").style.background='#0A0A0A';
-  document.getElementById("message_form_input").style.color='#FFFFFF';
-  document.getElementById("messages").style.color='#FFFFFF';
 }

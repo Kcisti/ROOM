@@ -6,30 +6,41 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
       <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="style.css"/>
     </head>
   <body id="body">
-    <div id="w">
-      <div class="loginhead">
-        <p class="log" id="log">room</p>
+    <div id="log">
+      <div class="loghead">
+        <p class="loghead_title"id="loghead_title">murky room</p>
       </div>
-      <div class="signin">
-        <input id="signin_input" placeholder="NAME" type="text"/>
-      </br><button id="signin_button" class="not" onclick="connect()">connect</button>
+      <div class="login">
+        <input class="login_input"id="login_input"placeholder="Username"type="text"autocomplete="off"/>
+        <ion-icon name="log-in-sharp"class='login_connect'onclick="connect()"></ion-icon>
       </div>
-      <button class="themes">
-        <center><ion-icon name="moon" class="themesI" id="themes_moon" onclick="sunappear()"></ion-icon></center>
-        <center><ion-icon name="sunny" class="themesI" id="themes_sun" onclick="moonappear()"></ion-icon></center>
-      </button>
+      <div class="logfooter">
+        <p class="logfooter_pOptions">Usage</p>
+        <p class="logfooter_pOptions">Settings</p>
+        <p class="logfooter_p">About ID of </p>
+        <p class="logfooter_p"style="color:#343A90;margin-left:5px;">Creator</p>
+        <p class="logfooter_p">:</p>
+        <center><div class="logfooter_socials">
+          <a href="https://twitter.com/kcisti"><ion-icon name="logo-twitter"class="logfooter_socials_icons"></ion-icon></a>
+          <a href="https://www.instagram.com/kcisti/"><ion-icon name="logo-instagram"class="logfooter_socials_icons"></ion-icon></a>
+          <a href="https://github.com/Kcisti"><ion-icon name="logo-github"class="logfooter_socials_icons"></ion-icon></a>
+        </div></center>
+      </div>
     </div>
-    <div id="s">
+    <div id="room">
       <div class="members-count" id="members_count">-</div>
       <div class="messages" id="messages"></div>
       <form class="message-form" id="message_form"onsubmit="return false;">
-        <input class="message-form__input" id="message_form_input" placeholder="Type a message.." type="text"/>
-        <button class="message-form__button" id="message_form_button"type="submit">SEND</button>
+        <input class="message-form__input" id="message_form_input" placeholder="Type a message.." autocomplete="off" type="text"/>
+        <button type="submit"class="message-form__but">
+          <ion-icon name="send"class="message-form__button" id="message_form_button"></ion-icon>
+        </button>
       </form>
     </div>
   </body>

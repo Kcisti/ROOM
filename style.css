@@ -1,110 +1,116 @@
 *{
-font-family: 'Ubuntu Condensed', sans-serif;
+font-family: "Inter", sans-serif;
 }
 body {
       margin: 0;
       padding: 0;
-      background:#0A0A0A;
+      background:#000000;
       overflow: hidden;
   }
 
-.loginhead {
-    margin-top: 100px;
-  }
-.themes{
-    margin: 20px;
-    margin-top: 30px;
-    width: 100px;
-    height: 100px;
-    padding: 0px;
-    outline: none;
-    border: 1px solid #554595;
-    background:radial-gradient(closest-side,#554595,#423189);
-    border-radius: 100%;
-    position: fixed;bottom: 30px;right: 20px;
-  }
-.themesI{
-    width: 50px;
-    height: 50px;
+  .loghead {
+      margin-top: 250px;
+    }
+  .loghead_title{
+      font-weight: 700;
+      font-size: 100px;
+      text-align: center;
+      color: #D2D2D2;
+      text-shadow: 0 0 0 transparent,
+      0 0 10px #343A90,
+      0 0 20px #343A90,
+      0 0 40px #343A90,
+      0 0 100px #343A90,
+      0 0 200px #343A90,
+      0 0 300px #343A90,
+      0 0 500px #343A90;
+      animation: animate 2s infinite alternate;
+      margin-top: 200px;
+      margin-bottom: 100px;
+      text-transform: uppercase;
+      }
+  @keyframes animate {
+      40% {
+        opacity: 1;
+      }
+      42% {
+        opacity: 0.6;
+      }
+      43% {
+        opacity: 1;
+      }
+      45% {
+        opacity: 0.3;
+      }
+      46% {
+        opacity: 1;
+      }
+      48%{
+        opacity: 0.4;
+    }}
+
+  .login_input{
     color: #FFFFFF;
+    margin-left:110px;
+    width: 50%;
+    background-color: #0A0A0A;
+    font-size: 48px;
+    padding: 20px;
+    padding-left: 40px;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 25px;
+    outline: none;
+    text-align: left;
+    float: left;
+    display: inline-block;
   }
-.loginhead p {
-  font-family: 'Zen Tokyo Zoo';
-  font-weight: bolder;
-  text-transform: uppercase;
-    font-size: 200px;
+  .login_connect{
+    width: 90px;
+    height: 90px;
+    color: #343A90;
+    margin-left: 40px;
+    display: inline-block;
+  }
+
+  .logfooter{
+    margin-top: 650px;
     text-align: center;
-    color: #0A0A0A;
-    text-shadow: 0 0 0 transparent,
-                  0 0 10px #554595,
-                  0 0 20px #554595,
-                  0 0 40px #554595,
-                  0 0 100px #554595,
-                  0 0 200px #554595,
-                  0 0 300px #554595,
-                  0 0 500px #554595;
-    animation: animate 2s infinite alternate;
-    margin-bottom: 250px;
   }
-@keyframes animate {
-    40% {
-      opacity: 1;
-    }
-    42% {
-      opacity: 0.6;
-    }
-    43% {
-      opacity: 1;
-    }
-    45% {
-      opacity: 0.3;
-    }
-    46% {
-      opacity: 1;
-    }
-    48%{
-      opacity: 0.4;
-  }}
-.signin input{
-  color: #FFFFFF;
-  margin-left:100px;
-  width: 55%;
-  background-color: inherit;
-  font-size: 56px;
-  padding: 15px;
-  border: 0px;
-  border-bottom: 2px solid #554595;
-  outline: none;
-  text-align: left;
-  float: left;
-  text-transform: uppercase;
-}
-.signin button{
-  color: #FFFFFF;
-  background-color: inherit;
-  font-size: 45px;
-  outline: none;
-  border: 0;
-  margin: 100px;
-  float: right;
-  text-transform: uppercase;
-}
-.signin p{
-  text-align: left;
-  float: left;
-  margin-left:100px;
-  color: #00FF00;
-  font-size: 58px;
-  text-transform: uppercase;
-}
+  .logfooter_pOptions{
+    font-weight: 500;
+    margin:10px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #D2D2D2;
+    text-decoration: underline;
+  }
+  .logfooter_p{
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 43px;
+    color: #D2D2D2;
+    display: inline-block;
+  }
+  .logfooter_socials_icons{
+    color: #343A90;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+
+  }
+
 
 .members-count{
-  border: 1px solid #423189;
   padding: 40px;
   margin: 30px;
-  color: #423189;
-  font-size: 60px;
+  color: #343A90;
   text-transform: uppercase;
+  background-color: #0A0A0A;
+  font-size: 48px;
+  border-radius: 25px;
 }
 .message-form{
   background: inherit;
@@ -115,24 +121,29 @@ body {
   color: #FFFFFF;
   width: 70%;
   background: inherit;
-  font-size: 60px;
-  padding: 10px;
-  padding-left: 15px;
+  font-size: 48px;
+  background-color: #0A0A0A;
+  padding: 20px;
+  padding-left: 40px;
   border: 0px ;
-  border-bottom: 1px solid #423189;
+  border-radius: 25px;
   outline: none;
   text-align: left;
   position: absolute;bottom: 30px;left: 30px;
 }
-.message-form button{
-  color: #423189;
+.message-form__button{
+  width: 70px;
+  height: 70px;
+  color: #343A90;
   background-color: inherit;
-  font-size: 48px;
-  padding: 22px;
+}
+.message-form__but{
+  width: 75px;
+  height: 75px;
+  border: 0px;
   outline: none;
-  border: 0;
-  width: 25%;
-  position: absolute;bottom: 30px;right: 30px;
+  background-color: inherit;
+  position: absolute;bottom: 40px;right: 50px;
 }
 
 .messages {
@@ -154,15 +165,15 @@ body {
   padding: 10px;
   position: relative;
   color: inherit;
-  font-size: 56px;
+  font-size: 50px;
   font-size-adjust: 100%;
 }
 .member {
   padding-right: 10px;
   position: relative;
   display: inline-block;
-  color: #423189;
+  color: #343A90;
   text-transform: uppercase;
-  font-size: 56px;
+  font-size: 50px;
   font-size-adjust: 100%;
 }
