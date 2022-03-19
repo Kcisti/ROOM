@@ -53,9 +53,9 @@ body {
     color: #FFFFFF;
     margin-left:110px;
     width: 50%;
-    background-color: #101010;
+    background-color: #141414;
     font-size: 49px;
-    padding: 20px;
+    padding: 25px;
     padding-left: 40px;
     font-weight: 500;
     border: 0px;
@@ -108,7 +108,7 @@ body {
   margin: 30px;
   color: #343A90;
   text-transform: uppercase;
-  background-color: #101010;
+  background-color: #141414;
   font-size: 52px;
   border-radius: 20px;
 }
@@ -122,7 +122,7 @@ body {
   width: 70%;
   background: inherit;
   font-size: 50px;
-  background-color: #101010;
+  background-color: #141414;
   padding: 20px;
   padding-left: 40px;
   border: 0px ;
