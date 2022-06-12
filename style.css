@@ -51,9 +51,8 @@ body {
 
   .login_input{
     color: #FFFFFF;
-    margin-left:110px;
     width: 50%;
-    background-color: #141414;
+    background: #202020;
     font-size: 49px;
     padding: 25px;
     padding-left: 40px;
@@ -61,17 +60,10 @@ body {
     border: 0px;
     border-radius: 25px;
     outline: none;
-    text-align: left;
-    float: left;
+    text-transform: uppercase;
     display: inline-block;
   }
-  .login_connect{
-    width: 90px;
-    height: 90px;
-    color: #343A90;
-    margin-left: 40px;
-    display: inline-block;
-  }
+
 
   .logfooter{
     margin-top: 650px;
@@ -81,7 +73,6 @@ body {
     font-weight: 500;
     margin:10px;
     font-size: 35px;
-    text-transform: uppercase;
     color: #D2D2D2;
     text-decoration: underline;
   }
@@ -119,7 +110,6 @@ body {
 }
 .message-form input{
   color: #FFFFFF;
-  width: 70%;
   background: inherit;
   font-size: 50px;
   background-color: #141414;
@@ -129,22 +119,10 @@ body {
   border-radius: 25px;
   outline: none;
   text-align: left;
-  position: absolute;bottom: 30px;left: 50px;
+  position: absolute;bottom: 30px;
+  left: 5%;right: 5%;
 }
-.message-form__button{
-  width: 70px;
-  height: 70px;
-  color: #343A90;
-  background-color: inherit;
-}
-.message-form__but{
-  width: 75px;
-  height: 75px;
-  border: 0px;
-  outline: none;
-  background-color: inherit;
-  position: absolute;bottom: 40px;right: 50px;
-}
+
 
 .messages {
   display: block;
@@ -160,15 +138,18 @@ body {
 .messages::-webkit-scrollbar{
   width: 0px;
 }
-.message {
+
+.container{
+  max-width: 90%;
   padding: 10px;
+}
+.message {
   position: relative;
   color: inherit;
   font-size: 50px;
   font-size-adjust: 100%;
 }
 .member {
-  padding-right: 10px;
   position: relative;
   display: inline-block;
   color: #343A90;

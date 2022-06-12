@@ -73,10 +73,12 @@ function connect(connect){
   }
 
   function createMessageElement(text, member) {
+    var {name} = member.clientData;
     const el = document.createElement('div');
-    el.appendChild(createMemberElement(member));
-    el.appendChild(document.createTextNode(text));
+    console.log(text);
+    el.innerText= name.toUpperCase() + ' ' +text;
     el.className = 'message';
+    console.log(el.innerText.  length);
     return el;
   }
 
@@ -89,24 +91,8 @@ function connect(connect){
     }
   }
 
-  function createMemberElement(member) {
-    var {name} = member.clientData;
-    const el = document.createElement('div');
-    el.appendChild(document.createTextNode(name));
-    el.className = 'member';
-    return el;
-  }
-
   function updateMembersDOM() {
     DOM.membersCount.innerText = `${members.length} users in room`;
-    navigator.serviceWorker.register('sw.js');
-    Notification.requestPermission(function(result) {
-      if (result === 'granted') {
-        navigator.serviceWorker.ready.then(function(registration) {
-          registration.showNotification('ROOM',
-          {body :`${members.length} users in room`})});
-        }
-      });
   }
 
 

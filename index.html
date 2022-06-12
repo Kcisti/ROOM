@@ -16,13 +16,11 @@
       <div class="loghead">
         <p class="loghead_title"id="loghead_title">murky room</p>
       </div>
-      <div class="login">
-        <input class="login_input"id="login_input"placeholder="Username"type="text"autocomplete="off"/>
-        <ion-icon name="log-in-sharp"class='login_connect'onclick="connect()"></ion-icon>
-      </div>
+      <center><div class="login">
+        <input class="login_input"id="login_input"placeholder="Username"type="text"autocomplete="off"
+        onkeydown="if (event.keyCode == 13) {connect(connect)}"/>
+      </div></center>
       <div class="logfooter">
-        <p class="logfooter_pOptions">Usage</p>
-        <p class="logfooter_pOptions">Settings</p>
         <p class="logfooter_p">About ID of </p>
         <p class="logfooter_p"style="color:#343A90;margin-left:5px;">Creator</p>
         <p class="logfooter_p">:</p>
@@ -37,10 +35,8 @@
       <div class="members-count" id="members_count">-</div>
       <div class="messages" id="messages"></div>
       <form class="message-form" id="message_form"onsubmit="return false;">
-        <input class="message-form__input" id="message_form_input" placeholder="Type a message.." autocomplete="off" type="text"/>
-        <button type="submit"class="message-form__but">
-          <ion-icon name="send"class="message-form__button" id="message_form_button"></ion-icon>
-        </button>
+        <input class="message-form__input" id="message_form_input" placeholder="Type a message.."
+         autocomplete="off" type="text"/>
       </form>
     </div>
   </body>
