@@ -73,12 +73,10 @@ function connect(connect){
   }
 
   function createMessageElement(text, member) {
-    var {name} = member.clientData;
     const el = document.createElement('div');
-    console.log(text);
-    el.innerText= name.toUpperCase() + ' ' +text;
+    el.appendChild(createMemberElement(member));
+    el.appendChild(document.createTextNode(text));
     el.className = 'message';
-    console.log(el.innerText.length);
     return el;
   }
 
@@ -89,6 +87,14 @@ function connect(connect){
     if (wasTop) {
       el.scrollTop = el.scrollHeight - el.clientHeight;
     }
+  }
+
+  function createMemberElement(member) {
+    var {name} = member.clientData;
+    const el = document.createElement('div');
+    el.appendChild(document.createTextNode(name));
+    el.className = 'member';
+    return el;
   }
 
   function updateMembersDOM() {
