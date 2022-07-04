@@ -78,7 +78,7 @@ function connect(connect){
     console.log(text);
     el.innerText= name.toUpperCase() + ' ' +text;
     el.className = 'message';
-    console.log(el.innerText.  length);
+    console.log(el.innerText.length);
     return el;
   }
 

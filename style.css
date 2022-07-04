@@ -147,7 +147,8 @@ body {
   position: relative;
   color: inherit;
   font-size: 50px;
-  font-size-adjust: 100%;
+  -webkit-text-size-adjust:none;
+  font-size-adjust: none;
 }
 .member {
   position: relative;
@@ -155,5 +156,6 @@ body {
   color: #343A90;
   text-transform: uppercase;
   font-size: 50px;
-  font-size-adjust: 100%;
+  -webkit-text-size-adjust:none;
+  font-size-adjust: none;
 }
