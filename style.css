@@ -138,7 +138,7 @@ body {
   color: #FFFFFF;
   border: 0px;
   padding: 30px;
-  height: 1000px;
+  height: auto;
   font-size-adjust: 100%;
 }
 .messages::-webkit-scrollbar{
