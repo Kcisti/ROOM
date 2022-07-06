@@ -1,104 +1,101 @@
 *{
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+:root{
+  --background:#303030;
+  --colorText: #D2D2D2;
+  --colorSecond:#4433cc;
 }
 body {
-      margin: 0;
-      padding: 0;
-      background:#000000;
-      overflow: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  background:#000000;
+  overflow: hidden;
+}
 
-  .loghead {
-      margin-top: 250px;
-    }
-  .loghead_title{
-      font-weight: 700;
-      font-size: 100px;
-      text-align: center;
-      color: #D2D2D2;
-      text-shadow: 0 0 0 transparent,
-      0 0 10px #343A90,
-      0 0 20px #343A90,
-      0 0 40px #343A90,
-      0 0 100px #343A90,
-      0 0 200px #343A90,
-      0 0 300px #343A90,
-      0 0 500px #343A90;
-      animation: animate 2s infinite alternate;
-      margin-top: 200px;
-      margin-bottom: 100px;
-      text-transform: uppercase;
-      }
-  @keyframes animate {
-      40% {
-        opacity: 1;
-      }
-      42% {
-        opacity: 0.6;
-      }
-      43% {
-        opacity: 1;
-      }
-      45% {
-        opacity: 0.3;
-      }
-      46% {
-        opacity: 1;
-      }
-      48%{
-        opacity: 0.4;
-    }}
+.loghead {
+  margin-top: 250px;
+}
+.loghead_title{
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+  color: var(--colorText);
+  text-shadow: 0 0 0 transparent,
+    0 0 10px var(--colorSecond),
+    0 0 20px var(--colorSecond),
+    0 0 40px var(--colorSecond),
+    0 0 100px var(--colorSecond),
+    0 0 200px var(--colorSecond),
+    0 0 300px var(--colorSecond),
+    0 0 500px var(--colorSecond);
+  animation: animate 2s infinite alternate;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+@keyframes animate {
+  40% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0.6;
+  }
+  43% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  46% {
+    opacity: 1;
+  }
+  48%{
+    opacity: 0.4;
+  }
+}
 
-  .login_input{
-    color: #FFFFFF;
-    width: 50%;
-    background: #202020;
-    font-size: 49px;
-    padding: 25px;
-    padding-left: 40px;
-    font-weight: 500;
-    border: 0px;
-    border-radius: 25px;
-    outline: none;
-    display: inline-block;
-  }
+.login_input{
+  color: var(--colorText);
+  width: 50%;
+  background: var(--background);
+  font-size: 49px;
+  padding: 25px;
+  padding-left: 40px;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 15px;
+  outline: none;
+  display: inline-block;
+}
 
-
-  .logfooter{
-    margin-top: 650px;
-    text-align: center;
-  }
-  .logfooter_pOptions{
-    font-weight: 500;
-    margin:10px;
-    font-size: 35px;
-    color: #D2D2D2;
-    text-decoration: underline;
-  }
-  .logfooter_p{
-    font-weight: 500;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 43px;
-    color: #D2D2D2;
-    display: inline-block;
-  }
-  .logfooter_socials_icons{
-    color: #343A90;
-    margin: 10px;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-
-  }
+.logfooter{
+  margin-top: 650px;
+  text-align: center;
+}
+.logfooter_p{
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 43px;
+  color: var(--colorText);
+  display: inline-block;
+}
+.logfooter_socials_icons{
+  color: var(--colorSecond);
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
 
 
 .members-count{
   padding: 40px;
   margin: 30px;
-  color: #343A90;
+  color: var(--colorText);
   text-transform: uppercase;
-  background-color: #141414;
+  background-color: var(--background);
   font-size: 52px;
   border-radius: 20px;
 }
@@ -108,21 +105,25 @@ body {
   position: absolute;bottom: 0px;left: 0px;right: 0px;
 }
 .message-form input{
-  color: #FFFFFF;
+  color:var(--colorText);
   background: inherit;
   font-size: 50px;
-  background-color: #141414;
+  background-color: var(--background);
   padding: 20px;
   padding-left: 40px;
   border: 0px ;
-  border-radius: 25px;
+  border-radius: 15px;
   outline: none;
   text-align: left;
   position: absolute;bottom: 30px;
   left: 5%;right: 5%;
 }
 
-
+.container{
+  max-width: 90%;
+  padding: 10px;
+  position: absolute;
+}
 .messages {
   display: block;
   overflow: auto;
@@ -138,10 +139,6 @@ body {
   width: 0px;
 }
 
-.container{
-  max-width: 90%;
-  padding: 10px;
-}
 .message {
   position: relative;
   color: inherit;
@@ -152,7 +149,7 @@ body {
 .member {
   position: relative;
   display: inline-block;
-  color: #343A90;
+  color: var(--colorSecond);
   text-transform: uppercase;
   font-size: 50px;
   -webkit-text-size-adjust:none;
