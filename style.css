@@ -90,14 +90,22 @@ body {
 }
 
 
+.mem-container{
+  position: absolute;left: 0px;
+  right: 0px;top: 0px;
+  background-color: #000000;
+  height: 200px;
+}
 .members-count{
   padding: 40px;
-  margin: 30px;
+  position: absolute;
   color: var(--colorText);
   text-transform: uppercase;
   background-color: var(--background);
   font-size: 52px;
   border-radius: 20px;
+  position: absolute;left: 30px;
+  right: 30px;top: 30px;
 }
 .message-form{
   background: #000000;
@@ -122,7 +130,7 @@ body {
 .container{
   max-width: 90%;
   padding: 10px;
-  position: absolute;
+  position: absolute; bottom: 150px;
 }
 .messages {
   display: block;
@@ -131,8 +139,6 @@ body {
   border: 0px;
   padding: 30px;
   height: 1000px;
-  margin-top: 100px;
-  margin-bottom: 200px;
   font-size-adjust: 100%;
 }
 .messages::-webkit-scrollbar{
