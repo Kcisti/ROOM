@@ -1,7 +1,15 @@
 document.getElementById('room').style.display='none';
+const DOM = {
+  membersCount: document.querySelector('.members-count'),
+  messages: document.querySelector('.messages'),
+  input: document.querySelector('.message-form__input'),
+  form: document.querySelector('.message-form'),
+};
+DOM.input.style.display='none';
 function connect(connect){
   document.getElementById('log').style.display='none';
   document.getElementById('room').style.display='block';
+  DOM.input.style.display='block';
   var membrana = document.getElementById('login_input').value;
   console.log(membrana);
 
@@ -51,12 +59,6 @@ function connect(connect){
     });
   });
 
-  const DOM = {
-    membersCount: document.querySelector('.members-count'),
-    messages: document.querySelector('.messages'),
-    input: document.querySelector('.message-form__input'),
-    form: document.querySelector('.message-form'),
-  };
 
   DOM.form.addEventListener('submit', sendMessage);
 
