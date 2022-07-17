@@ -1,16 +1,19 @@
 document.getElementById('room').style.display='none';
+
 const DOM = {
   membersCount: document.querySelector('.members-count'),
   messages: document.querySelector('.messages'),
   input: document.querySelector('.message-form__input'),
   form: document.querySelector('.message-form'),
-};
+}
+
 DOM.input.style.display='none';
+
 function connect(connect){
   document.getElementById('log').style.display='none';
   document.getElementById('room').style.display='block';
   DOM.input.style.display='block';
-  var membrana = document.getElementById('login_input').value;
+  const membrana = document.getElementById('login_input').value;
   console.log(membrana + 'has joined');
 
   const CLIENT_ID = 'EFslC1FFGukiWwqQ';
@@ -89,16 +92,20 @@ function connect(connect){
 
     var {name} = member.clientData;
     const ifica = document.createTextNode(name);
-    const not = ifica.data + ': ' + text;
+    const not = ifica.data + ' - ' + text;
     console.log(ifica.data + 'sent a message');
-    navigator.serviceWorker.register('sw.js');
-    Notification.requestPermission(function(result) {
-      if (result === 'granted') {
-        navigator.serviceWorker.ready.then(function(registration) {
-          registration.showNotification('MurkyRoom',
-          {body : not})});
-        }
-      });
+    if (membrana === ifica.data) {
+      false;
+    } else {
+      navigator.serviceWorker.register('sw.js');
+      Notification.requestPermission(function(result) {
+        if (result === 'granted') {
+          navigator.serviceWorker.ready.then(function(registration) {
+            registration.showNotification('MurkyRoom',
+            {body : not,})});
+          }
+        });
+    }
   }
 
   function createMemberElement(member) {
