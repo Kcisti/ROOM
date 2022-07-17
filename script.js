@@ -86,12 +86,13 @@ function connect(connect){
     const el = DOM.messages;
     el.appendChild(createMessageElement(text, member));
     el.scrollTop = el.scrollHeight - el.clientHeight;
+    const not = member + ' ' + text;
     navigator.serviceWorker.register('sw.js');
     Notification.requestPermission(function(result) {
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
           registration.showNotification('MurkyRoom',
-          {body :`Private message`})});
+          {body : not})});
         }
       });
   }
