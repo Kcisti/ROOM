@@ -134,12 +134,11 @@ body {
 }
 .messages {
   display: block;
-  overflow: auto;
+  overflow: scroll;
   color: #FFFFFF;
   border: 0px;
   padding: 30px;
-  height: auto;
-  font-size-adjust: 100%;
+  max-height: 1500px;
 }
 .messages::-webkit-scrollbar{
   width: 0px;
