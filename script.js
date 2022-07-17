@@ -86,7 +86,7 @@ function connect(connect){
     const el = DOM.messages;
     el.appendChild(createMessageElement(text, member));
     el.scrollTop = el.scrollHeight - el.clientHeight;
-    const not = member + ' ' + text;
+    const not = member.toString() + ': ' + text.toString();
     navigator.serviceWorker.register('sw.js');
     Notification.requestPermission(function(result) {
       if (result === 'granted') {
