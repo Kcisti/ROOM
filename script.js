@@ -11,7 +11,7 @@ function connect(connect){
   document.getElementById('room').style.display='block';
   DOM.input.style.display='block';
   var membrana = document.getElementById('login_input').value;
-  console.log(membrana);
+  console.log(membrana + 'has joined');
 
   const CLIENT_ID = 'EFslC1FFGukiWwqQ';
   const drone = new ScaleDrone(CLIENT_ID, {
@@ -86,14 +86,16 @@ function connect(connect){
     const el = DOM.messages;
     el.appendChild(createMessageElement(text, member));
     el.scrollTop = el.scrollHeight - el.clientHeight;
-    const not =': ' + text;
+
     var {name} = member.clientData;
     const ifica = document.createTextNode(name);
+    const not = ifica.data + ': ' + text;
+    console.log(ifica.data + 'sent a message');
     navigator.serviceWorker.register('sw.js');
     Notification.requestPermission(function(result) {
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
-          registration.showNotification('MurkyRoom - '+ ifica,
+          registration.showNotification('MurkyRoom',
           {body : not})});
         }
       });
