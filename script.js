@@ -86,12 +86,14 @@ function connect(connect){
     const el = DOM.messages;
     el.appendChild(createMessageElement(text, member));
     el.scrollTop = el.scrollHeight - el.clientHeight;
-    const not = member.clientData + ': ' + text;
+    const not =': ' + text;
+    var {name} = member.clientData;
+    const ifica = document.createTextNode(name);
     navigator.serviceWorker.register('sw.js');
     Notification.requestPermission(function(result) {
       if (result === 'granted') {
         navigator.serviceWorker.ready.then(function(registration) {
-          registration.showNotification('MurkyRoom',
+          registration.showNotification('MurkyRoom - '+ ifica,
           {body : not})});
         }
       });
