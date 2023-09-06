@@ -1,10 +1,18 @@
+@font-face{
+  font-family: "cy-grotesk-key-regular";
+  src: local("cy-grotesk-key-regular"), url(font/cy-grotesk-key-regular.ttf);
+}
 *{
-  font-family: "Inter", sans-serif;
+  font-family:"cy-grotesk-key-regular" ;
+  margin: 0; padding: 0;
+  -webkit-text-size-adjust:none;
+  font-size-adjust: none;
+  font-weight: 600;
 }
 :root{
   --background:#303030;
   --colorText: #D2D2D2;
-  --colorSecond:#4433cc;
+  --colorSecond:#45FB83;
 }
 body {
   margin: 0;
@@ -12,14 +20,17 @@ body {
   background:#000000;
   overflow: hidden;
 }
-
-.loghead {
-  margin-top: 250px;
+#log{
+  padding-left: 12%;
+  padding-right: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .loghead_title{
   font-weight: 700;
-  font-size: 100px;
-  text-align: center;
+  margin-top: 6rem;
+  font-size: 2.5rem;
   color: var(--colorText);
   text-shadow: 0 0 0 transparent,
     0 0 10px var(--colorSecond),
@@ -30,9 +41,9 @@ body {
     0 0 300px var(--colorSecond),
     0 0 500px var(--colorSecond);
   animation: animate 2s infinite alternate;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 3rem;
   text-transform: uppercase;
+  text-align: center;
 }
 @keyframes animate {
   40% {
@@ -57,37 +68,27 @@ body {
 
 .login_input{
   color: var(--colorText);
-  width: 50%;
+  width: calc(100% - 0.8rem - 0.8rem);
   background: var(--background);
-  font-size: 49px;
-  padding: 25px;
-  padding-left: 40px;
-  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 0.8rem;
   border: 0px;
-  border-radius: 15px;
+  border-radius: 0.3rem;
   outline: none;
-  display: inline-block;
 }
 
-.logfooter{
-  margin-top: 650px;
+.credit{
+  position: fixed;bottom: 10rem;
   text-align: center;
-}
-.logfooter_p{
-  font-weight: 500;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 43px;
+  font-size: 0.8rem;
   color: var(--colorText);
-  display: inline-block;
 }
-.logfooter_socials_icons{
+.credit span{
   color: var(--colorSecond);
-  margin: 10px;
-  width: 70px;
-  height: 70px;
-  display: inline-block;
+  cursor: pointer;
 }
+
+
 
 
 .mem-container{
@@ -97,40 +98,39 @@ body {
   height: 200px;
 }
 .members-count{
-  padding: 40px;
+  padding: 1rem;
   position: absolute;
   color: var(--colorText);
   text-transform: uppercase;
   background-color: var(--background);
-  font-size: 52px;
-  border-radius: 20px;
+  font-size:1.5rem;
+  border-radius: 0.3rem;
   position: absolute;left: 30px;
   right: 30px;top: 30px;
 }
 .message-form{
   background: #000000;
-  height: 130px;
+  height: 5rem;
   position: absolute;bottom: 0px;left: 0px;right: 0px;
 }
 .message-form input{
   color:var(--colorText);
   background: inherit;
-  font-size: 50px;
+  font-size: 1.5rem;
   background-color: var(--background);
-  padding: 20px;
-  padding-left: 40px;
+  padding: 0.8rem;
   border: 0px ;
-  border-radius: 15px;
+  border-radius: 0.3rem;
   outline: none;
   text-align: left;
-  position: absolute;bottom: 30px;
+  position: absolute;bottom: 1rem;
   left: 5%;right: 5%;
 }
 
 .container{
   max-width: 90%;
   padding: 10px;
-  position: absolute; bottom: 150px;
+  position: absolute; bottom: 5rem;
 }
 .messages {
   display: block;
@@ -147,16 +147,18 @@ body {
 .message {
   position: relative;
   color: inherit;
-  font-size: 50px;
+  font-size: 1.4rem;
   -webkit-text-size-adjust:none;
   font-size-adjust: none;
 }
 .member {
   position: relative;
+  margin-right: 5px;
   display: inline-block;
   color: var(--colorSecond);
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 1.4rem;
   -webkit-text-size-adjust:none;
   font-size-adjust: none;
 }
+

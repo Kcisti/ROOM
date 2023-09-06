@@ -2,6 +2,7 @@
 <html>
     <head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -14,33 +15,27 @@
       <div class="loghead">
         <p class="loghead_title"id="loghead_title">murky room</p>
       </div>
-      <center><div class="login">
+      <div class="login">
         <input class="login_input"id="login_input"placeholder="Username"type="text"autocomplete="off"
         onkeydown="if (event.keyCode == 13) {connect(connect)}"/>
-      </div></center>
-      <div class="logfooter">
-        <p class="logfooter_p">About ID of </p>
-        <p class="logfooter_p"style="color: var(--colorSecond);margin-left:5px;">Creator</p>
-        <p class="logfooter_p">:</p>
-        <center><div class="logfooter_socials">
-          <a href="https://twitter.com/kcisti"><ion-icon name="logo-twitter"class="logfooter_socials_icons"></ion-icon></a>
-          <a href="https://www.instagram.com/kcisti/"><ion-icon name="logo-instagram"class="logfooter_socials_icons"></ion-icon></a>
-          <a href="https://github.com/Kcisti"><ion-icon name="logo-github"class="logfooter_socials_icons"></ion-icon></a>
-        </div></center>
+      </div>
+      <div class="credit">created by
+        <a target="_blank"><span>MarkHoary.</span></a>
       </div>
     </div>
+
     <div id="room">
       <div class="container">
         <div class="messages" id="messages"></div>
       </div>
       <div class="mem-container"></div>
-        <div class="members-count" id="members_count">-</div>
-      </div>
-      <form class="message-form" id="message_form"onsubmit="return false;">
-        <input class="message-form__input" id="message_form_input" placeholder="Type a message.."
-         autocomplete="off" type="text"/>
-      </form>
+      <div class="members-count" id="members_count">-</div>
     </div>
+
+    <form class="message-form" id="message_form"onsubmit="return false;">
+      <input class="message-form__input" id="message_form_input" placeholder="Type a message.."
+       autocomplete="off" type="text"/>
+    </form>
   </body>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
