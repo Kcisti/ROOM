@@ -7,7 +7,6 @@
   margin: 0; padding: 0;
   -webkit-text-size-adjust:none;
   font-size-adjust: none;
-  font-weight: 600;
 }
 :root{
   --background:#303030;
@@ -28,9 +27,9 @@ body {
   justify-content: center;
 }
 .loghead_title{
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 6rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--colorText);
   text-shadow: 0 0 0 transparent,
     0 0 10px var(--colorSecond),
@@ -68,10 +67,10 @@ body {
 
 .login_input{
   color: var(--colorText);
-  width: calc(100% - 0.8rem - 0.8rem);
+  width: calc(100% - 0.5rem - 0.5rem);
   background: var(--background);
-  font-size: 1.3rem;
-  padding: 0.8rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
   border: 0px;
   border-radius: 0.3rem;
   outline: none;
@@ -116,9 +115,9 @@ body {
 .message-form input{
   color:var(--colorText);
   background: inherit;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   background-color: var(--background);
-  padding: 0.8rem;
+  padding: 0.5rem;
   border: 0px ;
   border-radius: 0.3rem;
   outline: none;
@@ -147,7 +146,7 @@ body {
 .message {
   position: relative;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   -webkit-text-size-adjust:none;
   font-size-adjust: none;
 }
@@ -157,7 +156,7 @@ body {
   display: inline-block;
   color: var(--colorSecond);
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   -webkit-text-size-adjust:none;
   font-size-adjust: none;
 }
