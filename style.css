@@ -129,7 +129,7 @@ body {
 .container{
   max-width: 90%;
   padding: 6%;
-  position: absolute; bottom: 3rem;
+  position: absolute; bottom: 4rem;
 }
 .messages {
   display: block;
