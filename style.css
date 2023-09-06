@@ -102,10 +102,10 @@ body {
   color: var(--colorText);
   text-transform: uppercase;
   background-color: var(--background);
-  font-size:1.5rem;
+  font-size:1.2rem;
   border-radius: 0.3rem;
-  position: absolute;left: 30px;
-  right: 30px;top: 30px;
+  position: absolute;top: 1rem;
+  left: 5%;right: 5%;
 }
 .message-form{
   background: #000000;
@@ -128,15 +128,14 @@ body {
 
 .container{
   max-width: 90%;
-  padding: 10px;
-  position: absolute; bottom: 5rem;
+  padding: 6%;
+  position: absolute; bottom: 3rem;
 }
 .messages {
   display: block;
   overflow: scroll;
   color: #FFFFFF;
   border: 0px;
-  padding: 30px;
   max-height: 1500px;
 }
 .messages::-webkit-scrollbar{
